@@ -1,0 +1,6 @@
+n= int(input())
+N= list(map(int,input().split()))
+N.sort()
+mm1= max(N[0]*N[1],N[-1]*N[-2])
+mm2= max(N[-1]*N[-2]*N[-3],N[-1]*N[1]*N[0])
+print(max(mm1,mm2))
