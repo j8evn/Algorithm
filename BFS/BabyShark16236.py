@@ -1,4 +1,5 @@
 ## 핵심 로직: 먹을 수 있는 물고기가 없을 때까지 최단 거리 탐색을 반복
+# size로 길을 찾고(BFS), 발견된 후보들을 fish_list에 모아 정렬한 뒤, 가장 좋은 후보의 거리만큼 t에 더하고 shark_idx*를 옮기는 과정을 반복
 
 from collections import deque
 import sys
